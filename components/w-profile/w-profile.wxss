@@ -1,0 +1,48 @@
+@import '/style/icons.wxss';
+@import '/style/color.wxss';
+@import '/style/common.wxss';
+
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+
+
+.fixed{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+   
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 1024;
+        box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+        
+    
+    
+}
+.tab{
+    padding: 25rpx 70rpx 30rpx 70rpx;
+position: relative;
+display: block;
+z-index: 0;
+
+}
+.tab view{
+    padding: 30rpx;
+border-radius: 6rpx;
+display: block;
+line-height: 1.6;
+
+}
+.sup{
+    height: 360rpx;
+}
+.support{
+    height: 84rpx;
+}
+.sizeTime{
+    width: 100%;
+padding: 20rpx 0px 0px;
+text-align: right;
+
+}

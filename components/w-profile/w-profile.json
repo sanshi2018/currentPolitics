@@ -1,0 +1,8 @@
+{
+  "component": true,    
+  "usingComponents": {       
+    "w-profile-nav":"/components/w-profile/w-profile-nav/w-profile-nav",
+    "w-profile-info":"/components/w-profile/w-profile-info/w-profile-info"
+  }
+
+}

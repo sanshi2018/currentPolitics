@@ -1,0 +1,77 @@
+@import '/style/icons.wxss';
+@import '/style/color.wxss';
+@import '/style/common.wxss';
+
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+.topBar {
+    width: 100%;
+    height: 270rpx;
+    background-color: #fff;
+}
+
+.userImg {
+    width: 95%;
+    height: 200rpx;
+    margin: 0rpx auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.avatar_nickname {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+
+.avatarImg {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+
+.nickname {
+    margin-left: 20rpx;
+}
+
+.qiandao {
+    width: 90%;
+    height: 70rpx;
+    padding: 0rpx 30rpx;
+    font-size: 32rpx;
+}
+
+.qianText {
+    float: left;
+}
+
+.icon_ {
+    float: right;
+}
+
+.kefu {
+    width: 160rpx;
+    height: 50rpx;
+    font-size: 25rpx;
+    border-radius: 25rpx;
+    outline: none;
+    text-align: center;
+    line-height: 50rpx;
+    background-color: #f1f1f1;
+}
+#icon{
+    position: fixed;
+left: 120rpx;
+top: 44rpx;
+    z-index: 1224;  
+}

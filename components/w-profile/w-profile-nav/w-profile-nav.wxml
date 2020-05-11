@@ -1,0 +1,11 @@
+<scroll-view scroll-x class="bg-gray nav text-center switch  ">
+  <view class="cu-item {{0==TabCur?'text-white cur active':''}} " style=" margin: 0 22px;" bindtap="tabSelect" data-id="0">
+    <text class="cuIcon-camerafill"></text> 浏览
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur active':''}} "style=" margin: 0 22px;" bindtap="tabSelect" data-id="1">
+    <text class="cuIcon-favor"></text> 收藏
+  </view>
+  <view class="cu-item {{2==TabCur?'text-white cur active':''}} "style=" margin: 0 22px;" bindtap="tabSelect" data-id="2">
+    <text class="cuIcon-comment"></text> 回复
+  </view>
+</scroll-view>

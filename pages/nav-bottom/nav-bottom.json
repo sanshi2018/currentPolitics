@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "home-search": "/components/w-home/w-home-search/w-home-search",
+      "home": "/components/w-home/w-home",
+      "information": "/components/w-information/w-information",
+      "profile": "/components/w-profile/w-profile"
+    
+    }
+  }

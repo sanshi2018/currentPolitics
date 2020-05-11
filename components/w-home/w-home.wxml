@@ -1,0 +1,46 @@
+
+
+<!-- 轮播图 -->
+<swiper class="card-swiper {{true?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="4000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{imgList}}" wx:key class="{{cardCur==index?'cur':''}}" style="padding: 40rpx 0rpx 42rpx">
+    <view class="swiper-item">
+      <image src="{{item.src}}" mode="aspectFit" ></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+
+
+<block wx:if="{{showitem}}">
+    <!-- 社会新闻 -->
+    <view class="contentList">
+        <view class="barTitle">
+            <view class="Title-left">小知识点</view>
+            <view class="Title-right">
+                查看全部
+                <text class="icon-right"></text>
+            </view>
+        </view>
+        <block wx:for="{{cityNews}}" wx:key="index">
+            <view class="content">
+                <view class="contentImg">
+                    <image src="{{item.thumbnail_pic_s}}" mode="widthFix"></image>
+                </view>
+                <view class="content-right">
+                    <view class="content-title">
+                        <view class="titleText">{{item.author_name}}</view>
+                        <view  class="introduction text-black">{{item.title}}</view>
+                    </view>
+                    <view class="count">
+                        <view class="playcount">{{item.date}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</block>
+<block wx:else>
+    <view class="dataNotip">
+        <view class="tip">网络错误，请检查数据链接是否正确</view>
+    </view>
+</block >

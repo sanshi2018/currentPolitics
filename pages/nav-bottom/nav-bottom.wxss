@@ -1,0 +1,15 @@
+#low{
+    position: fixed;
+    bottom: 0rpx;
+    z-index: 2;  
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.components{
+    height: 100%;
+}
+page{
+    background-color:#fff
+  }

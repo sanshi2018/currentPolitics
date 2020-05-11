@@ -1,0 +1,12 @@
+<view class="flex justify-center" >
+  
+    <view class="Alltext" >
+          <view class="text flex justify-center text-xl text-black text-shadow text-bold" >关于</view>
+        <view class="text">本程序所用的思维导图资源均来自：<a class=" text-grey">https://mm.edrawsoft.cn/community/</a></view>
+        <view class="text" >新闻数据来自聚合数据API，类别：社会</view>
+        <view class="text">前端UI框架使用colorUI开发</view>
+        <view class="text">如有疑问请联系作者：<a class="text-grey" >1246984534@qq.com</a></view>
+        <view class=" text-gray text-xs" >没有明确产品意图，只为学习小程序 后期会慢慢完善 </view>
+    </view>
+     <button class="cu-btn bg-mauve animation-shake margin-sm basis-sm shadow" bindtap="toggle" data-class="shake">清除缓存</button>
+</view>

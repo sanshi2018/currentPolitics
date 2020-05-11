@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {       
+    "w-backTop":"/components/w-information/w-back-top/w-back-top"
+    
+  }
+}

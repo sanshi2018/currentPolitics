@@ -1,0 +1,22 @@
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+.nav-far{
+    margin: 0 60rpx;
+}
+.active:after {
+    content: '';
+    width: 40rpx;
+    height: 8rpx;
+    position: absolute;
+    bottom: 0rpx;
+    left: 70rpx;
+    border-radius: 15rpx;
+    
+  }
+  
+  .active {
+    font-size: 32rpx;
+    font-weight: 700;
+    transition: all 0.3s;
+    color: #0c98e2;
+  }

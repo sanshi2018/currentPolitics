@@ -1,0 +1,24 @@
+<view wx:if="{{PageCur=='home'}}" ><home-search></home-search></view>
+<view  hidden="{{PageCur!='home'}}" style="background-color: #fff;height: 3602px;"><home ></home></view>
+<!-- <view hidden="{{PageCur!='information'}}"><home ></home></view> -->
+<view wx:if="{{PageCur=='profile'}}" style="height: 1100rpx;background-color: #fff"><profile></profile></view>
+<!-- <home wx:if="{{PageCur=='home'}}"></home>
+<information wx:if="{{PageCur=='information'}}"></information>
+<profile wx:if="{{PageCur=='profile'}}"></profile> -->
+<view id="low" class="cu-bar tabbar margin-bottom-xl bg-white">
+    <view class="action text-{{homeColor}} " bind:tap="NavChange" data-cur="home">
+        <view class="cuIcon-homefill"></view>
+        首页
+    </view>
+    <view class="action text-{{informationColor}} " bind:tap="NavChange" data-cur="information">
+        <!-- <button class="cu-btn cuIcon-creative bg-{{informationColor}} "></button> -->
+        <view class="cuIcon-creative"></view>
+        想法
+    </view>
+    <view class="action text-{{profileColor}}" bind:tap="NavChange" data-cur="profile">
+        <view class="cuIcon-my">
+            <view class="cu-tag badge"></view>
+        </view>
+        我的
+    </view>
+</view>

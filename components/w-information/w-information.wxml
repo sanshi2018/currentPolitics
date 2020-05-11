@@ -1,0 +1,66 @@
+<scroll-view id="C1" scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}" scroll-into-view="C1" style="background-color:#ffff;">
+  <view class='lockerOutSide padding margin text-center'>
+    <view class='locker cu-btn lg block shadow radius margin-xl round bg-cyan' bindtap="showModal" data-target="viewModal">
+      更多章节
+    </view>
+  </view>
+  <view class="mindMap">
+    <view class="mindMapN ">
+      <image mode="widthFix" src="{{sectionImage}}" bindtap="previewImage" data-target="Image" />
+      <image class="iconfavor " src="{{icon_favor}}" bind:tap="addFavor" />
+    </view>
+  </view>
+  <!-- 评论区域 -->
+  <block wx:for="{{sectionContent}}" wx:key="index">
+    <view class="critic">
+      <view class="cu-card dynamic {{isCard?'no-card':''}}">
+        <view class="cu-item shadow" style="margin:2px 20px;">
+          <view class="cu-list menu-avatar">
+            <view class="cu-item">
+              <view class="cu-avatar round lg" style="background-image:url({{item.userIcon}});"></view>
+              <view class="content flex-sub">
+                <view>{{item.userName}}</view>
+                <view class="text-gray text-sm flex justify-between">{{item.userData}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="text-content" style="margin: 2px 20px;">{{item.userContent}}</view>
+          <view class="text-gray text-sm text-right padding" style="border: 0px 0px;margin: 0px -10px;height: 0rpx;">
+            <text class="cuIcon-attentionfill margin-lr-xs"></text>
+            1
+            <text class="cuIcon-like margin-lr-xs cuIcon-gray"></text>
+            0
+            <text class="cuIcon-messagefill margin-lr-xs"></text>
+            0
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="support"></view>
+</scroll-view>
+<!-- 回复框 -->
+<view class=" foot cu-bar input">
+  <view class="action">
+    <text class="cuIcon-sound text-grey"></text>
+  </view>
+  <input class="solid-bottom" placeholder="在此评论" value="{{inputContent}}" focus="{{false}}" maxlength="300" cursor-spacing="10" bindinput="criticBox"></input>
+  <view class="action">
+    <text class="cuIcon-emojifill text-grey"></text>
+  </view>
+  <button class="cu-btn bg-green shadow-blur" size="mini" bind:tap="sendCritic">发送</button>
+</view>
+<w-backTop wx:if="{{showBackTop}}"></w-backTop>
+<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+  <text class="cuIcon-pullright"></text>
+</view>
+<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+    <view class="cu-item arrow" wx:for="{{sectionName}}" wx:key="index">
+      <view class="content" bind:tap="openSection" data-index="{{item.Index}}">
+        <text class="cuIcon-selection text-grey"></text>
+        <text class="text-grey">{{item.Name}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

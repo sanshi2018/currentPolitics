@@ -1,0 +1,6 @@
+@import '/style/icons.wxss';
+@import '/style/color.wxss';
+@import '/style/common.wxss';
+
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";

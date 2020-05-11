@@ -1,0 +1,3 @@
+<view class="back-top" bind:tap="handleBackTop">
+  <image  src="cloud://sanshi-oyomo.7361-sanshi-oyomo-1301133430/currentPolitics/icon/bk.png" />
+</view>

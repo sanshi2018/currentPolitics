@@ -1,0 +1,13 @@
+<!-- 伪搜索框 -->
+  <view class="cu-bar bg-white search" >
+    <!-- <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view> -->
+    <button  class="cu-avatar round" style="background-image:url({{userInfoImage}});width: 8.5%;" open-type="getUserInfo" bindgetuserinfo="getUserInfo" ></button>
+    <view class="search-form radius">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+    </view>
+    <view class="action text-brown">
+      <text>青岛</text>
+      <text class="cuIcon-triangledownfill"></text>
+    </view>
+  </view>

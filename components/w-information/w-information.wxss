@@ -1,0 +1,156 @@
+@import '/style/icons.wxss';
+@import '/style/color.wxss';
+@import '/style/common.wxss';
+
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+
+
+.locker{
+  width:100%;
+  border: 0px 0px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+ 
+}
+
+.lockerOutSide{
+  border: 0px 0px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  margin-bottom: 1rpx;
+ 
+}
+
+  
+  .DrawerPage {
+ 
+    width: 100vw;
+ 
+    left: 0vw;
+    background-color: #f1f1f1;
+    transition: all 0.4s;
+  }
+  
+  .DrawerPage.show {
+    transform: scale(0.9, 0.9);
+    left: 85vw;
+    box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
+    transform-origin: 0;
+  }
+  
+  .DrawerWindow {
+    position: absolute;
+    width: 85vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    transform: scale(0.9, 0.9) translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+  
+  .DrawerWindow.show {
+    transform: scale(1, 1) translateX(0%);
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .DrawerClose {
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    color: transparent;
+    padding-bottom: 30rpx;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
+    letter-spacing: 5px;
+    font-size: 50rpx;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+  
+  .DrawerClose.show {
+    opacity: 1;
+    pointer-events: all;
+    width: 15vw;
+    color: #fff;
+  }
+  
+  .DrawerPage .cu-bar.tabbar .action button.icon {
+    width: 64rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .DrawerPage .cu-bar.tabbar .action .cu-avatar {
+    margin: 0;
+  }
+  
+  .DrawerPage .nav {
+    flex: 1;
+  }
+  
+  .DrawerPage .nav .cu-item.cur {
+    border-bottom: 0;
+    position: relative;
+  }
+  
+  .DrawerPage .nav .cu-item.cur::after {
+    content: "";
+    width: 10rpx;
+    height: 10rpx;
+    background-color: currentColor;
+    position: absolute;
+    bottom: 10rpx;
+    border-radius: 10rpx;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .DrawerPage .cu-bar.tabbar .action {
+    flex: initial;
+  }
+  
+
+  /* ----------------------------------------------------------------------------------------------------- */
+  .mindMap{
+
+    padding: 10rpx 20px  22rpx;
+
+
+  }
+  .mindMapN{
+    padding-bottom: 24rpx;
+    border-bottom: 6rpx solid #8799a3;
+  }
+  .mindMapN image{
+    display:block; margin:0 auto;
+  }
+  .critic{
+    border-top: 15rpx;
+  }
+
+  .iconfavor{
+    position: absolute;
+    top: 108rpx;
+    right: 102rpx;
+    
+width: 55rpx;
+height: 55rpx;
+  }
+  .support{
+    height: 110rpx;
+  }
+  page{
+    background-color:#fff
+  }

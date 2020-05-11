@@ -1,0 +1,161 @@
+{
+	"description": "项目配置文件",
+	"cloudfunctionRoot": "cloud/",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"appid": "wx967a601dc5db4cf8",
+	"projectname": "currentPolitics",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "components/w-information/w-information",
+					"pathName": "components/w-information/w-information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/nav-bottom/nav-bottom",
+					"pathName": "pages/nav-bottom/nav-bottom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile",
+					"pathName": "components/w-profile/w-profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile-nav/w-profile-nav",
+					"pathName": "components/w-profile/w-profile-nav/w-profile-nav",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile-info/w-profile-info",
+					"pathName": "components/w-profile/w-profile-info/w-profile-info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile-browse/w-profile-browse",
+					"pathName": "components/w-profile/w-profile-browse/w-profile-browse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile-favor/w-profile-favor",
+					"pathName": "components/w-profile/w-profile-favor/w-profile-favor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile-msg/w-profile-msg",
+					"pathName": "components/w-profile/w-profile-msg/w-profile-msg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/nav-bottom/nav-bottom",
+					"pathName": "pages/nav-bottom/nav-bottom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile-browse/w-profile-browse",
+					"pathName": "components/w-profile/w-profile-browse/w-profile-browse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile",
+					"pathName": "components/w-profile/w-profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-profile/w-profile",
+					"pathName": "components/w-profile/w-profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/about/about",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/w-information/w-information",
+					"pathName": "components/w-information/w-information",
+					"scene": null
+				}
+			]
+		}
+	}
+}

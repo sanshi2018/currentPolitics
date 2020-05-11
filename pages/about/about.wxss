@@ -1,0 +1,13 @@
+@import "/colorui/animation.wxss";
+.text{
+    padding: 15rpx 0px;
+}
+.Alltext{
+    position: fixed;
+   top: 110rpx;
+}
+image[class*="gif-"] {
+    border-radius: 6rpx;
+    display: block;
+  }
+  

@@ -1,0 +1,30 @@
+		<!-- 头像昵称签到部分 -->
+		<view class="topBar">
+			<!-- 头像昵称 -->
+			<view class="userImg">
+				<view class="avatar_nickname">
+					<view class="avatar">
+						<!-- <image class="avatarImg" src="{{avatarUrl}}"></image> -->
+						<button class="cu-avatar round xl margin-left" style="background-image:url({{userInfoImage}});" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+              
+            </button>
+			 <view id="icon" class=" cu-tag badge {{sex!=1?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}" style="position: fixed;left: 120rpx;top: 44rpx;z-index: 1224; "></view>
+					</view>
+					<view class="nickname">
+						<text class="# text-lg">{{nickName}}</text>
+						
+					</view>
+				</view>
+				<view class="kefu text-xl" bindtap="naviAbout"><text class="cuIcon-font"></text>关于</view>
+			</view>			
+			<view class="qiandao">
+				<!-- 涉及canvas所以暂时搁置 -->
+				<view class="qianText">
+					<text class="cuIcon-group_fill text-gray"></text>
+					<text style="margin-left:20rpx">广场</text>
+				</view>
+				<view class="icon_">
+					<text class="icon-right text-gray"></text>
+				</view>
+			</view>
+		</view>
